@@ -1,0 +1,1 @@
+ALTER TABLE "custom"."tasks" ADD COLUMN "task_status" BOOLEAN;

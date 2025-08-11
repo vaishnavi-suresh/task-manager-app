@@ -1,0 +1,36 @@
+{
+  "name": "learn_flutter",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "code to learn flutter",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "set NODE_OPTIONS=--loader ts-node/esm && ts-node express-server/schema.ts",
+    "build": "tsc",
+    "start": "node build/schema.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "express": "^5.1.0",
+    "pg": "^8.15.6",
+    "postgres": "^3.4.7",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.14",
+    "drizzle-kit": "^0.31.0",
+    "supabase": "^2.22.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
