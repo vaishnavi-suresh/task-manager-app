@@ -1,16 +1,51 @@
-# flutter_app_one
+# Task Manager App
 
-A new Flutter project.
+A mobile-first task manager built with **Flutter** (Android-focused) and an **Express** backend.  
 
-## Getting Started
+The Flutter `lib` folder contains:
+- **Screens**: Onboarding, Login & Registration, Home
+- **Controllers**: Handle all state management for the app (no external state management tools used)
 
-This project is a starting point for a Flutter application.
+The backend (`express-server`) contains:
+- **Routes**: Associated with each table in the database for querying
+- **Data Access Layer (DAL)**: Intermediary between routes and database, contains functions used by the routes
 
-A few resources to get you started if this is your first Flutter project:
+The backend runs on **port 4001**.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Structure
+```
+learn_flutter/
+├─ express-server/
+│  ├─ routes/                # Express routes for each database table
+│  ├─ dal.js                  # Data Access Layer
+│  └─ other backend files...
+├─ lib/
+│  ├─ features/
+│  │  ├─ controllers/         # State management
+│  │  └─ screens/              # Onboarding, Login/Registration, Home
+│  └─ other Flutter files...
+```
+
+---
+
+## Scripts
+
+**Backend (Express)**
+\`\`\`bash
+# install dependencies
+npm app.js
+
+# start server
+npm start
+\`\`\`
+
+**Flutter**
+\`\`\`bash
+# get dependencies
+flutter pub get
+
+# run app
+flutter run
+\`\`\`
